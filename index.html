@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASHUAN PRATAMA - Portofolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">TENTANG</a></li>
+                <li><a href="#services">JASA KU</a></li>
+                <li><a href="#work">YANG SUDAH KU LAKUKAN</a></li>
+                <li><a href="#articles">ARTIKEL</a></li>
+                <li><a href="#contact">KONTAK KU</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <video autoplay muted loop id="bg-video">
+            <source src="73EpIkbEsTPAp.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1><span class="bold">JASHUAN</span> PRATAMA</h1>
+            <p>Welcome to my portfolio website. Terima kasih telah mengunjungi laman web saya, web ini dibuat untuk iseng doang kayanya hhhee.</p>
+            <div class="buttons">
+                <a href="#about" class="btn">SIAPA AKU?</a>
+                <a href="#work" class="btn btn-outline">APA YANG KU LAKUKAN?</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <h2>Tentang Saya</h2>
+        <p>Halo! Saya JASHUAN PRATAMA, seorang web developer dan desainer grafis yang memiliki minat dalam menciptakan pengalaman digital yang menarik.</p>
+    </section>
+
+    <section id="services" class="content-section">
+        <h2>Jasa Ku</h2>
+        <ul>
+            <li>Desain & Pengembangan Web</li>
+            <li>UI/UX Design</li>
+            <li>Pembuatan Konten Digital</li>
+            <li>Konsultasi Teknologi</li>
+        </ul>
+    </section>
+
+    <section id="work" class="content-section">
+        <h2>Yang Sudah Ku Lakukan</h2>
+        <p>Saya telah mengerjakan berbagai proyek, termasuk pembuatan website bisnis, portofolio, dan aplikasi berbasis web.</p>
+    </section>
+
+    <section id="articles" class="content-section">
+        <h2>Artikel</h2>
+        <p>Baca tulisan terbaru saya tentang teknologi, desain, dan pengembangan web.</p>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Kontak Ku</h2>
+        <p>Hubungi saya melalui email di <strong>contact@JASHUANPRATAMA.com</strong> atau melalui whatsapp saya (085191034433).</p>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                window.scrollTo({
+                    top: target.offsetTop - 50,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
